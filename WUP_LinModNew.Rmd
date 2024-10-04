@@ -41,13 +41,22 @@ model1=lm(SIMS~ARM, data=data)
 abline(model1)
 ```
 
+This scatter plots shows stimulated stregnth increases 
 ### Numerical results
 
+```{r}
+cor(SIMS~ARM,data=data)
+```
 
+Correlation= 0.69 shows moderate positive correlation beetween SIMS score and ARM Strength
 ### Inferential  (Build model.1)
 
-#### Predict at target point
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
 
+#### Predict at target point
 
 #### scatterplot with model fit
   
